@@ -56,7 +56,7 @@ def add_to_chroma(chunks: list[Document]):
 
     new_chunks = []
     for chunk in chunks_with_ids:
-        if chunk.metadata["id"] is not in existing_ids:
+        if chunk.metadata["id"] not in existing_ids:
             new_chunks.append(chunk)
     if(len(new_chunks)):
         print(f"Adding new documents : {len(new_chunks)}")
