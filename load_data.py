@@ -45,7 +45,7 @@ def add_to_chroma(chunks: list[Document]):
     db=Chroma(
         persist_directory=CHROMA_PATH,
         collection_name="rag-chatbot",
-        embedding_function=create_embedding_function
+        embedding_function=create_embedding_function()
     )
     chunks_with_ids = calculate_chunk_id(chunks)
 
@@ -60,9 +60,10 @@ def add_to_chroma(chunks: list[Document]):
             new_chunks.append(chunk)
     if(len(new_chunks)):
         print(f"Adding new documents : {len(new_chunks)}")
-        new_chunks_ids = [chunk.metadate["id"] for chunk in new_chunks]
-        db.add_document(new_chunks, ids=new_chunks_ids)
-        db.persist()
+        new_chunks_ids = [chunk.metadata["id"] for chunk in new_chunks]
+        db.add_documents(new_chunks, ids=new_chunks_ids)
+        # Note: Chroma automatically persists data when using persist_directory
+        print(f"✅ Successfully added {len(new_chunks)} documents to the database")
     else:
         print("No new documents to add")
     
@@ -91,3 +92,6 @@ def clear_database():
     if(os.path.exists(CHROMA_PATH)):
         shutil.rmtree(CHROMA_PATH)
     
+
+if __name__ == "__main__":
+    main()
