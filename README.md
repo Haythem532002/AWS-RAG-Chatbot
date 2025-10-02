@@ -309,37 +309,6 @@ python -c "from embedding_function import create_embedding_function; print('Embe
 - **🔍 Search Quality**: Semantic similarity matching with confidence scores
 - **� UI Performance**: Optimized React components with smooth animations
 
-## 🚀 Deployment
-
-### Local Development
-
-```bash
-# Start all services
-docker-compose up -d  # (if using Docker)
-# or manually start Ollama, Flask, and Next.js
-```
-
-### Production Deployment
-
-- **🐳 Docker**: Containerized deployment with Docker Compose
-- **☁️ Cloud Platforms**: Deploy on AWS, Azure, or GCP
-- **🔄 CI/CD**: GitHub Actions for automated testing and deployment
-- **🔒 Security**: Environment variables and API key management
-
-### Docker Deployment (Coming Soon)
-
-```bash
-# Build and run with Docker Compose
-docker-compose up --build
-```
-
-## 🛡️ Security Considerations
-
-- **🔐 Local AI Models**: No data sent to external services
-- **🌐 CORS Configuration**: Restricted origins for API access
-- **📝 Input Validation**: Sanitized user inputs and API requests
-- **🔒 Environment Variables**: Secure configuration management
-
 ## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
