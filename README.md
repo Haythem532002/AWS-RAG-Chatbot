@@ -324,5 +324,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 **Built with ❤️ using Modern AI & RAG Architecture**
-
-> 💡 **Need help?** Check out our [Wiki](../../wiki) or open an [Issue](../../issues) for support!
