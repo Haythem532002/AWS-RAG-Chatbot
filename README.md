@@ -202,31 +202,6 @@ RAG-Chatbot/
 
 ## 🔧 Configuration
 
-### Environment Variables
-
-Create a `.env` file for custom configurations:
-
-```env
-# Ollama Configuration
-OLLAMA_HOST=http://localhost:11434
-EMBEDDING_MODEL=nomic-embed-text
-LLM_MODEL=mistral
-
-# ChromaDB Configuration
-CHROMA_PATH=chroma
-COLLECTION_NAME=rag-chatbot
-
-# Flask Configuration
-FLASK_ENV=development
-FLASK_PORT=5000
-CORS_ORIGINS=http://localhost:3000
-
-# Document Processing
-CHUNK_SIZE=800
-CHUNK_OVERLAP=80
-MAX_SOURCES=5
-```
-
 ### Customization Options
 
 - **📝 Document Sources**: Add your own PDFs to the `data/` directory
