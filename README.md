@@ -173,6 +173,9 @@ RAG-Chatbot/
 ├── data/                           # Source documents directory
 │   ├── AWS Certified Cloud Practitioner Slides v2.11.0.pdf
 │   └── aws-overview.pdf
+├── rag/                           # Project screenshots
+│   ├── Capture d'écran 2025-10-02 115121.png
+│   └── Capture d'écran 2025-10-02 140024.png
 ├── chroma/                         # ChromaDB persistence directory
 │   └── [vector database files]
 ├── rag-chatbot-frontend/          # Next.js frontend application
@@ -185,17 +188,15 @@ RAG-Chatbot/
 │   │       └── ChatInterface.tsx  # Main chat component
 │   ├── package.json
 │   └── tailwind.config.js
-├── backend/                        # Python backend
-│   ├── load_data.py               # Document processing and vectorization
-│   ├── query_data.py              # Query processing and RAG pipeline
-│   ├── embedding_function.py      # Ollama embedding integration
-│   ├── flask_backend.py           # REST API server
-│   └── azure_embedding_function.py # Alternative Azure OpenAI integration
-├── tests/                         # Testing utilities
-│   ├── test_embeddings.py         # Comprehensive embedding tests
-│   ├── quick_test.py              # Quick functionality verification
-│   └── azure_test.py              # Azure OpenAI diagnostics
+├── load_data.py                   # Document processing and vectorization
+├── query_data.py                  # Query processing and RAG pipeline
+├── embedding_function.py          # Ollama embedding integration
+├── flask_backend.py               # REST API server
 ├── requirements.txt               # Python dependencies
+├── venv/                          # Python virtual environment
+├── __pycache__/                   # Python cache files
+├── .git/                          # Git repository
+├── .gitignore                     # Git ignore file
 └── README.md                      # Project documentation
 ```
 
